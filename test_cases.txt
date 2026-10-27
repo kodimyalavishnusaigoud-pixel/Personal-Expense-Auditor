@@ -1,0 +1,55 @@
+Test Case 1: Valid input, expenses within budget
+Budget: 5000
+Expenses:
+Description: Grocery, Category: Food, Amount: 1200
+Description: Bus pass, Category: Transport, Amount: 600
+Description: Movie tickets, Category: Entertainment, Amount: 400
+Expected:
+Total Spent: 2200
+Remaining Budget: 2800
+Highest Expense: Grocery (1200)
+Category totals: Food(1200), Transport(600), Entertainment(400)
+Budget Status: Healthy (~44% used, within budget)
+Test Case 2: Budget zero or negative input
+Budget: 0
+
+Expected: Message "Budget cannot be zero. Try again."
+
+Budget: -1000
+
+Expected: Message "Budget cannot be negative."
+
+Test Case 3: Expenses exceed budget
+Budget: 3000
+Expenses:
+Description: Rent, Category: Housing, Amount: 3500
+Expected:
+Total Spent: 3500
+Remaining Budget: -500
+Budget Status: OVER BUDGET by 500
+Test Case 4: Expenses exactly equal budget
+Budget: 2500
+Expenses:
+Description: Utilities, Category: Housing, Amount: 1000
+Description: Food, Category: Food, Amount: 1500
+Expected:
+Total Spent: 2500
+Remaining Budget: 0
+Budget Status: Budget fully used. $0 remaining.
+Test Case 5: Expense input validation (negative amount)
+When entering expense Amount: -100
+Expected: Message "Amount cannot be negative. Try again."
+Test Case 6: No expenses entered
+Budget: 4000
+Expenses: done immediately (no expenses)
+Expected:
+Message "No expenses entered."
+Total Spent: 0
+Remaining Budget: 4000
+Test Case 7: Expense with decimal amounts
+Budget: 1200.50
+Expenses:
+Description: Coffee, Category: Food, Amount: 3.75
+Description: Taxi, Category: Transport, Amount: 25.20
+Expected:
+Correct handling of decimal values in total, highest expense, categories, and budget remaining.
