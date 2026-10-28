@@ -1,0 +1,28 @@
+PS C:\Users\saipr\AppData\Local\Programs\Microsoft VS Code> & "C:\Program Files\Python314\python.exe" c:/Users/saipr/OneDrive/Desktop/vishnu/Expense_Auditor/main.py
+=== Personal Expense Auditor ===
+Enter Budget: 5000
+Add your expenses. Type 'done' when finished.
+Description or 'done'): description
+Category: Food
+Amount: 1800
+Description or 'done'): Decription
+Category: Electricity
+Amount: 1500
+Description or 'done'): Description
+Category: Transport
+Amount: 500
+Description or 'done'): done
+
+----- REPORT -----
+Expenses:
+ - description | Food | 1800.0
+ - Decription | Electricity | 1500.0
+ - Description | Transport | 500.0
+Total Spent: 3800.0 | Remaining Budget: 1200.0
+Highest Single Expense: description ( 1800.0 )
+Category Totals:
+  Food: 1800.0
+  Electricity: 1500.0
+  Transport: 500.0
+Budget Status: Healthy ( 76 % used, within budget )
+PS C:\Users\saipr\AppData\Local\Programs\Microsoft VS Code> 
